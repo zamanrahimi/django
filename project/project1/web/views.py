@@ -8,21 +8,7 @@ from .models import Destination
 
 
 def index(request):
-    des1 = Destination()
-    des1.name='Hello from destination one'
-    des1.fname='Ali'
-    des1.img='banner.jpg'
-    des1.bon=True
-    
-
-
-    des2 = Destination()
-    des2.name='Hello from destination two'
-    des2.fname='Karim'
-    des2.img='logo.png'
-    des2.bon=True
-    
-    dests = [des1, des2]
+    dests = Destination.objects.all()
 
     return render(request, 'index.html', {'dests': dests})
 
