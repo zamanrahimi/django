@@ -1,4 +1,10 @@
-to solve this: 
+
+1. to solve this: 
 django.core.exceptions.ImproperlyConfigured: Error loading psycopg2 module: No module named 'psycopg2'
 
 use: pip install psycopg2
+
+2. pillow library problem: 
+web.Destination.img: (fields.E210) Cannot use ImageField because Pillow is not installed.
+        HINT: Get Pillow at https://pypi.org/project/Pillow/ or run command "python -m pip install Pillow".
+use: pip install pillow 
