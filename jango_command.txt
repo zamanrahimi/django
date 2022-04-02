@@ -1,0 +1,33 @@
+1. python --version
+2. pip --version
+3. check django version 
+
+4. install django
+pip install django
+
+5. django-admin --version
+python -m django --version
+6. install vertual envirement
+py -m pip install --user virtualenv
+
+7. creating virtual envirement in windows:
+py -m venv env1
+9. to activate the envirement 
+env1\Scripts\activate
+
+10. create project 
+django-admin startproject zamanApp
+11. to run the server 
+ python manage.py runserver
+12. for making migration 
+python .\manage.py makemigrations
+13. to migrate 
+python .\manage.py migrate
+
+14. for creating superuser
+python .\manage.py createsuperuser
+15. pip install pylint
+if something is not recognized 
+
+16. python and postgres adapter 
+pip install psycopg2

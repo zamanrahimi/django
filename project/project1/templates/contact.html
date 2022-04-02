@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>
+
+    Hello and welcome to contact page! {{name}}
+
+
+    <form action="add" method="post">
+        
+        {% csrf_token %}
+
+        <input type="text" name="num1">
+        <input type="text" name="num2">
+        <input type="submit" value="add">
+
+    </form>
+
+
+</h1>
+
+{% endblock %}

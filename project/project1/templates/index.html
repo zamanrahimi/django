@@ -1,0 +1,18 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+
+{% for des in dests %}
+
+
+<li> {{ des.name }} - {{des.fname}} - 
+    <img src="{{baseUrl}}/{{des.img}}" width="100" alt="#" /> 
+   
+    {% if des.bon %}
+    Bonus
+    {% endif %}
+    
+</li>
+
+
+{% endfor %}
