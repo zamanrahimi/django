@@ -1,0 +1,4 @@
+to solve this: 
+django.core.exceptions.ImproperlyConfigured: Error loading psycopg2 module: No module named 'psycopg2'
+
+use: pip install psycopg2
