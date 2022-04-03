@@ -1,7 +1,7 @@
 {% load static %}
 {% static "images" as baseUrl %}
 
-
+{% comment %} # CRUD - 3 {% endcomment %}
 {% if item_edit %}
 
 <form method="post" action="{% url 'update_item1' item_edit.id %}">

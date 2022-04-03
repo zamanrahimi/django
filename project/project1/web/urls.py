@@ -4,6 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+# CRUD - 1
 # route section of CRUD, then go to the view 
 urlpatterns = [
     path('list', views.index),

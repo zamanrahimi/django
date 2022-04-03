@@ -6,7 +6,7 @@ from .models import Emp
 # Create your views here.
 
 
-
+# CRUD - 2
 
 # select information from database 
 def index(request):
