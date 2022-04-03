@@ -25,7 +25,9 @@ python .\manage.py makemigrations
 python .\manage.py migrate
 
 14. for creating superuser
+#for creating superuser, use the following command 
 python .\manage.py createsuperuser
+
 15. pip install pylint
 if something is not recognized 
 

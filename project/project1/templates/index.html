@@ -2,17 +2,39 @@
 {% static "images" as baseUrl %}
 
 
-{% for des in dests %}
+{% if item_edit %}
 
-
-<li> {{ des.name }} - {{des.fname}} - 
-    <img src="{{des.img.url}}" width="100" alt="#" /> 
-   
-    {% if des.bon %}
-    Bonus
-    {% endif %}
+<form method="post" action="{% url 'update_item1' item_edit.id %}">
+    {% csrf_token %}
+    <input type="text" value="{{ item_edit.name }}" name="name" >
+    <input type="text" value="{{ item_edit.desc }}" name="desc">
     
-</li>
+    <input type="submit" value="insert" >
+    
+    </form>
 
+
+{% else %}
+
+<form method="post" action="insert">
+{% csrf_token %}
+<input type="text" name="name" >
+<input type="text" name="desc">
+
+<input type="submit" value="insert" >
+
+</form>
+{% endif %}
+
+<hr>
+
+
+{% for d in dests %}
+
+<li> {{ d.name }} - {{ d.desc }} 
+
+<a href="delete_item/{{d.id}}">Delete</a>    
+<a href="update_item/{{d.id}}">Update</a>    
+</li>
 
 {% endfor %}
